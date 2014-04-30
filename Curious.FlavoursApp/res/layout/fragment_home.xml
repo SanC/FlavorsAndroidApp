@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+       android:orientation="vertical" >
+<!--     android:background="@color/pages_background"   -->
+ 
+    
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/prev"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="previous"
+            android:onClick="OnclickPrevious" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="next"
+            android:onClick="OnclickNext" />
+    </LinearLayout>
+        
+    <!-- ViewFlipper can contains any view elements in this case it contains 5 ImageView view Component with different Images-->
+    <ViewFlipper
+        android:id="@+id/viewFlipperHome"
+        android:layout_width="fill_parent"
+	    android:layout_height="400dp" 
+        android:layout_margin="6dip" 
+        android:gravity="center"
+         >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img1" /><!-- Setting img1 from drawable folder in ImageView -->
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img2" /><!-- Setting img2 from drawable folder in ImageView -->
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img3" /><!-- Setting img3 from drawable folder in ImageView -->
+
+    </ViewFlipper>
+    
+
+        <TextView
+        android:id="@+id/txtLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:text="Welcome Santhosh!"/>
+    
+        
+
+  
+
+</RelativeLayout>

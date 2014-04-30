@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="list_item_title">#46431f</color>
+    <color name="list_background">#46431f</color> 
+    <color name="list_background_pressed">#46431f</color>
+
+    <color name="list_divider">#fdf171</color>
+    <color name="pages_background">#fdf171</color>
+</resources>
